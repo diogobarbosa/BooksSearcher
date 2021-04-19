@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "791f3548-f8ae-47b5-b54d-a3bbf0dbaf84",
+		"name": "Books",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/cadastrar_livro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\" : \"Harry Potter\",\r\n    \"Autor\" : \"JK Rowling\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cadastrar_livro",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cadastrar_livro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/consultar_livro/0bc08b59-8d63-480f-8c78-f43b328ec703",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/consultar_livro/0bc08b59-8d63-480f-8c78-f43b328ec703",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"consultar_livro",
+						"0bc08b59-8d63-480f-8c78-f43b328ec703"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
